@@ -4,21 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Navegação exemplo - Flask{% endblock %}</title>
+    <title>{% block title %}Navegação Python - Flask{% endblock %}</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body,
-        .navbar-brand,
-        .nav-link {
-            font-family: 'Poppins', sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="{{ url_for('index') }}">Navegação Python</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -31,10 +25,10 @@
                         <a class="nav-link" href="{{ url_for('index') }}">Página Inicial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('sobre') }}">Sobre</a>
+                        <a class="nav-link" href="{{ url_for('quemsomos') }}">Quem Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('contato') }}">Contato</a>
+                        <a class="nav-link" href="{{ url_for('localizacao') }}">Localização</a>
                     </li>
                 </ul>
             </div>

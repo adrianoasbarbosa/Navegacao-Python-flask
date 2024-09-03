@@ -8,17 +8,17 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-#Rota para a página sobre (Sobre)
+#Rota para a página quem somos (Quem Somos)
 
-@app.route('/sobre')
-def sobre():
-    return render_template('sobre.html')
+@app.route('/quemsomos')
+def quemsomos():
+    return render_template('quemsomos.html')
 
-#Rota para a página contato (Contato)
+#Rota para a página localizao (Localização)
 
-@app.route('/contato')
-def contato():
-    return render_template('contato.html')
+@app.route('/localizacao')
+def localizacao():
+    return render_template('localizacao.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
