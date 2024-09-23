@@ -1,0 +1,16 @@
+/* Estilo para a fonte Poppins */
+body,
+.navbar-brand,
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo adicional para a imagem */
+.custom-img {
+    width: 300px;
+    /* Ajuste a largura conforme necessário */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    max-width: 100%;
+    /* Garante que a imagem não ultrapasse o contêiner */
+}
